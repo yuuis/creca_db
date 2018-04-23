@@ -1,0 +1,5 @@
+<% @contents.each do |content|%>
+  <%= link_to("/contents/#{content.id}") do%>
+    <p><%= content.name %></p>
+  <% end %>
+<% end %>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CrecaDB</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  
+<%= link_to("新規", "/contents/new")%>
+
+<%= link_to("検索", "/contents/serch")%>
+
+<%= link_to("CrecaDBとは", "/about")%>
+
+<%= link_to("お問い合わせ", "/contact")%>
+
+<%= yield %>
+
+</body>
+</html>
